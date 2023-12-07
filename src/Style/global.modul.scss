@@ -1,52 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body{
-    font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.primaryHeading{
-    color:  #F2F2F2;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.primaryHeading {
+  color: #f2f2f2;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-
-font-family: 'Inter', sans-serif;
-// font-size: 31px;
-font-size: 2rem;
-font-style: normal;
-font-weight: 400;
-line-height: 1.1; 
+  font-family: "Inter", sans-serif;
+  // font-size: 31px;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
-.text{
-    color:  #f2f2f2bc;
+input {
+  display: flex;
+//   width: 340px;
+  width: 100%;
+  padding: 20px 24px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--grey-100, #e5e5e6);
+  background: #fff;
+  color: var(--grey-200, #cacbcc);
 
-/* Body */
-// font-family: Inter;
-font-size: 1rem;
-font-style: normal;
-font-weight: 300;
-line-height: 120%; /* 19.2px */
+  /* Body */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 19.2px */
+
+  /* ShadowDropdown */
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.04),
+    0px 4px 10px 0px rgba(0, 0, 0, 0.04);
 }
 
+button {
+  display: flex;
+//   width: 340px;
+width: 100%;
+  height: 59px;
+  padding: 18px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--grey-900, #19191a);
+  background: var(--grey-900, #19191a);
+  color: var(--White, #fff);
+  text-align: center;
+  /* Button Label */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+p {
+  color: var(--grey-900, #19191a);
+  text-align: center;
 
-.block{
-   height: 100%;
-   width: auto;
+  /* Button Label */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+.secandaryHeading {
+  color: #b0b1b3;
+
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1; /* 46.8px */
 }
 
-.testimonial{
-    height: 10rem;
+.text {
+  color: #f2f2f2bc;
+
+  /* Body */
+  // font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 19.2px */
 }
 
-.cohort{
-    height: 100%;
-    width: auto;
-    object-fit: contain;
+.block {
+  height: 100%;
+  width: auto;
 }
 
-.hr{
-    border: 0; 
-    height: 1px; 
-    background-color: #ffffff8d; 
-    margin: 10px 0; 
+.testimonial {
+  height: 10rem;
+}
+
+.cohort {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.hr {
+  border: 0;
+  height: 1px;
+  background-color: #ffffff8d;
+  margin: 10px 0;
 }
