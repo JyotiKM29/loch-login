@@ -11,12 +11,12 @@
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(minmax(30vh , 1fr), 3);
+    grid-template-rows: repeat(minmax(max-content , 1fr), 3);
 
     background: #000;
     background-image: url("../../public/bg.svg");
     background-position: center center;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     object-fit: contain;
   }
@@ -88,15 +88,20 @@
 .box3 {
   grid-column: 1/2;
   grid-row: 2/3;
+  
+  min-width: 20rem;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+ 
+
 }
 .box4 {
   grid-column: 2/3;
   grid-row: 2/3;
 
-  width: 20rem;
+  min-width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -116,10 +121,31 @@
   width: 100%;
   overflow: hidden;
 
-  .testimonials {
-    width: 100%;
+  .detail{
+    display: grid;
+    grid-template-columns:min-content(max-content, 10rem) 1fr;
+    height: 100%;
 
-    display: flex;
-    overflow: hidden;
+    .logo{
+        padding: 1rem;
+        padding-right: 3rem;
+        // margin: 1rem;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+       display: flex;
+       flex-shrink: 0;
+    }
+
+    .testimonials {
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    
+        display: flex;
+        overflow: hidden;
+      }
   }
+
+  
 }

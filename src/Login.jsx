@@ -30,24 +30,31 @@ function Login() {
         </div>
 
         <div className={styles.bottom}>
-            <h4 className={styles.primaryHeading}>
+            <h4 className={styles.primaryHeading} style={{textAlign:'right' }}>
             Testimonials
-            </h4>
+            </h4 >
+            <hr className={styles.hr}/>
+            <div className={styles.detail}>
+            <div className={styles.logo}>
+              <img src="/logo.svg" alt="logo" />
+            </div>
             <div className={styles.testimonials}>
 
-            <div className={styles.testimonials_container}>
-            <img src="/testimonial1.svg" alt="testimonial" className={styles.testimonial} />
-            <img src="/testimonial2.svg" alt="testimonial" className={styles.testimonial} />
-            <img src="/testimonial3.svg" alt="testimonial" className={styles.testimonial} />
-         
+<div className={styles.testimonials_container}>
+<img src="/testimonial1.svg" alt="testimonial" className={styles.testimonial} />
+<img src="/testimonial2.svg" alt="testimonial" className={styles.testimonial} />
+<img src="/testimonial3.svg" alt="testimonial" className={styles.testimonial} />
+
+</div>
+<div className={styles.testimonials_container}>
+<img src="/testimonial1.svg" alt="testimonial" className={styles.testimonial} />
+<img src="/testimonial2.svg" alt="testimonial" className={styles.testimonial} />
+<img src="/testimonial3.svg" alt="testimonial" className={styles.testimonial} />
+
+</div>
+</div>
             </div>
-            <div className={styles.testimonials_container}>
-            <img src="/testimonial1.svg" alt="testimonial" className={styles.testimonial} />
-            <img src="/testimonial2.svg" alt="testimonial" className={styles.testimonial} />
-            <img src="/testimonial3.svg" alt="testimonial" className={styles.testimonial} />
-         
-            </div>
-            </div>
+            
         </div>
       </div>
       <div className={styles.login__right}></div>

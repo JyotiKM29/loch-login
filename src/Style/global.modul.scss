@@ -39,6 +39,14 @@ line-height: 120%; /* 19.2px */
 }
 
 .cohort{
-    height: 80%;
+    height: 100%;
     width: auto;
+    object-fit: contain;
+}
+
+.hr{
+    border: 0; 
+    height: 1px; 
+    background-color: #ffffff8d; 
+    margin: 10px 0; 
 }
