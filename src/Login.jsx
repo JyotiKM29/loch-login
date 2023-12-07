@@ -61,8 +61,11 @@ function Login() {
         <div className={styles.form}>
           <h4 className={styles.secandaryHeading}
           style={{color:"#B0B1B3"}}
-          >Sign up for ? exclusive access.</h4>
+          >Sign up for ?
+          <br/>
+           exclusive access.</h4>
           <input type="email" placeholder="Your email address"/>
+          <span class={styles.errorMail} id="errorMail">Invalid email</span>
           <button>Get started</button>
           <p>You’ll receive an email with an invite link to join.</p>
         </div>

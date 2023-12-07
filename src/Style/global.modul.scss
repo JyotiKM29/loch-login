@@ -39,6 +39,25 @@ input {
     0px 4px 10px 0px rgba(0, 0, 0, 0.04);
 }
 
+input[type="email"]:valid {
+    border-color: green; 
+  }
+/* Styling for an invalid email */
+input[type="email"]:invalid {
+    border-color: red; 
+  }
+
+  .errorMail {
+    display: none;
+    color: red;
+  }
+  
+  /* Display the error message when email input is invalid */
+  input[type="email"]:invalid + .errorMail {
+    display: block;
+  }
+
+
 button {
   display: flex;
 //   width: 340px;
@@ -74,6 +93,7 @@ p {
 }
 .secandaryHeading {
   color: #b0b1b3;
+  align-self: flex-start;
 
   font-size: 39px;
   font-style: normal;
