@@ -35,7 +35,7 @@
     background: #000;
     background-image: url("../../public/bg.svg");
     background-position: center center;
-    background-size: none;
+    background-size: 130% 130%;
     background-repeat: no-repeat;
     object-fit: cover;
     // border: 1px solid red;
@@ -46,6 +46,8 @@
     }
 
     @media (max-width: 768px) {
+      grid-column: 1/2;
+      grid-row: 2/3;
         padding: 2rem;
       display: grid;
       grid-template-columns: 1fr;
@@ -75,6 +77,8 @@
 
     @media (max-width: 768px) {
         padding: 2rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
     }
 
     .form {
