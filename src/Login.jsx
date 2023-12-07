@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Style/main.module.scss";
 import Notification from "./component/Notification";
 import Watch from "./component/Watch";
 
+
+
 function Login() {
+
+  const [email, setEmail] = useState(""); 
+
+  function handleSubmit(e) {
+    e.preventDefault(); 
+      window.location.href = 'https://app.loch.one/welcome'; 
+      
+  }
+
+
   return (
     <div className={styles.login}>
       <div className={styles.login__left}>
@@ -102,21 +114,26 @@ function Login() {
         </div>
       </div>
       <div className={styles.login__right}>
-        <div className={styles.form}>
-          <h4 className={styles.secandaryHeading} style={{ color: "#B0B1B3" }}>
+        <form className={styles.form} onClick={handleSubmit}>
+          <h4 className={styles.secandaryHeading} >
             Sign up for ?
             <br />
             exclusive access.
           </h4>
-          <input type="email" placeholder="Your email address" />
+          <input 
+           type="email"
+            placeholder="Your email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+           />
           <span class={styles.errorMail} id="errorMail">
             Invalid email
           </span>
-          <button>Get started</button>
+          <button type="submit">Get started</button>
           <p className={styles.p}>
             You’ll receive an email with an invite link to join.
           </p>
-        </div>
+        </form>
       </div>
     </div>
   );
