@@ -98,6 +98,11 @@ width: 100%;
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 19.2px */
+
+  &:hover , &:active{
+  cursor: pointer;
+  scale: 1.01;
+  }
 }
 .p {
   color: var(--grey-900, #19191a);
@@ -165,12 +170,17 @@ width: 100%;
     }
 
     .testimonial {
-        height: 60%;
+        height: 100%;
 
         @media(max-width:768px){
             height: 100%;
           }
       }
+  }
+
+  .testimonials:hover .testimonials_container {
+    animation-play-state: paused;
+    cursor: pointer;
   }
   
   @keyframes slide {

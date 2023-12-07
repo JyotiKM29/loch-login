@@ -2,19 +2,18 @@ import React, { useState } from "react";
 import styles from "./Style/main.module.scss";
 import Notification from "./component/Notification";
 import Watch from "./component/Watch";
-
+import { Link } from "react-router-dom";
 
 
 function Login() {
 
   const [email, setEmail] = useState(""); 
 
-  function handleSubmit(e) {
-    e.preventDefault(); 
-      window.location.href = 'https://app.loch.one/welcome'; 
-      
-  }
-
+ function handleSubmit(e){
+  e.preventDefault();
+  window.location.href = 'https://app.loch.one/welcome';
+ }
+    
 
   return (
     <div className={styles.login}>
@@ -114,7 +113,7 @@ function Login() {
         </div>
       </div>
       <div className={styles.login__right}>
-        <form className={styles.form} onClick={handleSubmit}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <h4 className={styles.secandaryHeading} >
             Sign up for ?
             <br />
@@ -127,9 +126,11 @@ function Login() {
             onChange={(e) => setEmail(e.target.value)}
            />
           <span class={styles.errorMail} id="errorMail">
-            Invalid email
+          Please enter a valid email
           </span>
-          <button type="submit">Get started</button>
+       
+  <button type="button">Get started</button>
+
           <p className={styles.p}>
             You’ll receive an email with an invite link to join.
           </p>
