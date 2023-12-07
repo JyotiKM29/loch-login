@@ -80,7 +80,7 @@ width: 100%;
   font-weight: 600;
   line-height: 120%; /* 19.2px */
 }
-p {
+.p {
   color: var(--grey-900, #19191a);
   text-align: center;
 
@@ -121,11 +121,7 @@ p {
   height: 10rem;
 }
 
-.cohort {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-}
+
 
 .hr {
   border: 0;

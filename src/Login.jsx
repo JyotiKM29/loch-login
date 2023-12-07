@@ -67,7 +67,7 @@ function Login() {
           <input type="email" placeholder="Your email address"/>
           <span class={styles.errorMail} id="errorMail">Invalid email</span>
           <button>Get started</button>
-          <p>You’ll receive an email with an invite link to join.</p>
+          <p className={styles.p}>You’ll receive an email with an invite link to join.</p>
         </div>
       </div>
     </div>
